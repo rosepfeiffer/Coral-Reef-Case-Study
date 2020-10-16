@@ -53,9 +53,12 @@ out <- ode(y = state,times=times,func=coral_model,parms=parameters)
 par(mfrow=c(1,1))
 plot(out,ylab='N',xlab='time',las=1, xlim=c(0,10))
 ```
-a. With the parameters set as the given values, the macroalgae population will grow while all the other populations will decline to zero. 
+
+a. With the parameters set as the given values, the macroalgae population will grow while all the other populations will decline to zero.
+
 
 b. The parameter that would have the greatest impact on the population is 'a', the competition between macroalgae and coral. A 0.1 increase in 'a' will cause all the populations other than macroalgae to decline to zero at a faster rate.The macroalgae population will increase faster at first, but will start to decline soon as all the other populations drop to zero. 
+
 ```{r, echo=FALSE}
 require(deSolve)
 
